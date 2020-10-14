@@ -4,6 +4,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings({"deprecation", "unchecked"})
 public class Author extends Person {
     private List books;
 
@@ -27,7 +28,6 @@ public class Author extends Person {
     public void addBook(String book) {
         books.add(book);
     }
-
 
     public String sortName() {
         return String.format("%s, %s", lastName, firstName);
